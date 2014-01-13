@@ -75,7 +75,7 @@
   color: @carousel-control-color;
   text-align: center;
   text-shadow: @carousel-text-shadow;
-  // We can't have this transition here because webkit cancels the carousel
+  // We can't have this transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
 
   // Set gradients for backgrounds
@@ -91,6 +91,7 @@
   // Hover/focus state
   &:hover,
   &:focus {
+    outline: none;
     color: @carousel-control-color;
     text-decoration: none;
     .opacity(.9);
